@@ -1,0 +1,21 @@
+{
+  "name": "channayousif-simple-calculator",
+  "version": "1.1.1",
+  "description": "This is a simple CLI calculator for learning typescript",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "channayousif-simple-calculator": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^9.2.16"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7"
+  }
+}
