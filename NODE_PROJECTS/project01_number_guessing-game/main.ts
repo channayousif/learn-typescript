@@ -31,6 +31,9 @@ const user_input = await inquirer.prompt([{
 let temp =Math.abs(random_number - user_input.number);
 if(user_input.number === "0"){
     break;
+}else if(user_input.number > 10){
+        console.log(`*********Please enter number between 1 and 10!***********\n`);
+        continue;
 }else if(temp == 0){
     score+=(10);
     console.log(`*********Bulls eye!***********\nYou guessed correctly! \nRandom number was ${random_number} \nYour guess was ${user_input.number}.\n Difference was ${temp} \n****your score is now ${score}****`)
