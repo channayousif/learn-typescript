@@ -1,5 +1,8 @@
 #! /usr/bin/env node
-/**
+
+/** 
+ * NPX Command to access my calculator is:
+ *                      npx channayousif-number-guessing-game
  * @Date: 13-04-2024
  * @author: channayousif
  * @Project: 01
