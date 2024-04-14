@@ -1,4 +1,4 @@
-# Todo List
+# Todo List (Done 14-04-2024)
 
 
 Develop a simple command line Todo app using [TypeScipt](https://www.typescriptlang.org/), [Node.js](https://nodejs.org/en/) and [Inquirer](https://www.npmjs.com/package/inquirer). 
