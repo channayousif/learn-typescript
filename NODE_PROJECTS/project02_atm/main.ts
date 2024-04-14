@@ -1,4 +1,4 @@
-#! /use/bin/env node 
+#! /usr/bin/env node 
 /**
  * @Date: 13-04-2024
  * @Project: 2
