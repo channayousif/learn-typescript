@@ -1,0 +1,25 @@
+{
+  "name": "channayousif-curr-conv",
+  "version": "1.0.0",
+  "description": "Currency converter app",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "channayousif-curr-conv": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "currency",
+    "converter"
+  ],
+  "author": "channayousif",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^9.2.18"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7"
+  }
+}
