@@ -149,7 +149,7 @@ const confirm= await inquirer.prompt([
     type:"input",
     name:"amount",
     },
-    inquirer.Separator,
+   // inquirer.Separator,
     {
         message:"Please select target currency:",
         type:"list",
@@ -157,7 +157,7 @@ const confirm= await inquirer.prompt([
         choices:currencies
     },
 ])
-inquirer.Separator
+//inquirer.Separator
 if (exchange.source==exchange.target){
     console.log("You selected the same source and arget currencies! Please try again")
 }else{
