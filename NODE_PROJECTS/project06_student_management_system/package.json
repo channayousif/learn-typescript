@@ -1,0 +1,16 @@
+{
+  "name": "channayousif-stu-mgmt-sys",
+  "version": "1.0.0",
+  "description": "cli based student managment system using OOP",
+  "main": "index.js",
+  "type": "module",
+  "types": "inquirer",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "channayousif",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7"
+  }
+}
