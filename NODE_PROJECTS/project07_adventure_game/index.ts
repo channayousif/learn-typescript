@@ -53,7 +53,7 @@ console.log(
 );
 console.log(
   `\t\t${chalk.bold.green(
-    '"Warrior" a console based adventre Game'
+    '"Warrior" a console based adventure Game'
   )}  \n\t${chalk.bold.red(
     "Player fights with his chosen opponent and attacks it,\n\t or use haelth potion to restore health.\n\n---Channayousif"
   )}`
