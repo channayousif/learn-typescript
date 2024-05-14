@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 /**
  * @date: 25-04-2024
  * @project: 06

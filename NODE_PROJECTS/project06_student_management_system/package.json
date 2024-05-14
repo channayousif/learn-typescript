@@ -1,8 +1,9 @@
 {
   "name": "channayousif-stu-mgmt-sys",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "cli based student managment system using OOP",
   "main": "index.js",
+  "bin": "./index.js",
   "type": "module",
   "types": "inquirer",
   "scripts": {
@@ -12,5 +13,8 @@
   "license": "ISC",
   "devDependencies": {
     "@types/inquirer": "^9.0.7"
+  },
+  "dependencies": {
+    "inquirer": "^9.2.21"
   }
 }

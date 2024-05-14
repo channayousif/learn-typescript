@@ -1,6 +1,6 @@
 {
   "name": "channayousif-word-counter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The user will enter a english paragraph and all that is needed is to just to implement counting characters and words without whitespaces.",
   "main": "index.js",
   "type": "module",
@@ -11,6 +11,7 @@
   "author": "channayousif",
   "license": "ISC",
   "dependencies": {
+    "chalk": "^5.3.0",
     "inquirer": "^9.2.19"
   },
   "devDependencies": {
