@@ -15,16 +15,17 @@ This somewhat complex TypeScript/Node.js project is a console-based application.
 import inquirer from "inquirer";
 console.log(" ----------------------------------")
 console.log("|----Welcome to channayousif ATM----|")
-console.log(" ----------------------------------")
-const user_input = await inquirer.prompt([
-    {
-        message:"Please enter your pin to proceed:",
-        name:"pin",
-        type: "password"
-}])
+console.log(" -----------------------------------\n default pin : 1234")
+
 let x:boolean=true;
-let acc_bal = 100000000000000;
+let acc_bal = 100000;
 while(x==true){
+    const user_input = await inquirer.prompt([
+        {
+            message:"Please enter your pin to proceed:",
+            name:"pin",
+            type: "password"
+    }])
     console.log("*****************----------------------------------************")
 if(user_input.pin==="1234"){
     const user_input = await inquirer.prompt([
@@ -49,7 +50,17 @@ switch(user_input.op){
         }else{
             console.log(`Insufficient funds, please try again`)
         }
-        break;
+        const ask = await inquirer.prompt(
+            {
+                message:"Do you want to continue:",
+                name:"cont",
+                type:"confirm"
+             });
+             console.log(ask.cont);
+        if(!ask.cont){
+            break;
+        }
+        continue;
     case "Cash Withdrawal":
         const cw = await inquirer.prompt([
             {
@@ -74,5 +85,8 @@ switch(user_input.op){
     default :
         
 }
+}else{
+    console.log("Please enter valid pin.");
+    continue;
 }
 }

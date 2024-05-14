@@ -1,4 +1,4 @@
-#! usr/bin/env node
+#! /usr/bin/env node
 
 /**
  * @Date: 14-04-2024

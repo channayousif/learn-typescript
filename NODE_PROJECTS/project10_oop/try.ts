@@ -10,4 +10,6 @@ async function student_menu(){
     return input.opt
 }
 const res= await student_menu();
-console.log(res);
+console.log(Date());
+
+ let x=[1,2,3,4];

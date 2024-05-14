@@ -1,10 +1,11 @@
-# Todo List (Done 14-04-2024)
+# Todo List (Project completed on 14-04-2024)
 
 
-Develop a simple command line Todo app using [TypeScipt](https://www.typescriptlang.org/), [Node.js](https://nodejs.org/en/) and [Inquirer](https://www.npmjs.com/package/inquirer). 
+A simple command line Todo app using [TypeScipt](https://www.typescriptlang.org/), [Node.js](https://nodejs.org/en/) and [Inquirer](https://www.npmjs.com/package/inquirer). 
 
-Create a GitHub repository for the project and submit its URL in the project submission form. 
+GitHub repository for the project 
+    https://github.com/channayousif/learn-typescript/tree/master/NODE_PROJECTS/project03_todo_list
 
-[Watch Coding Tutorial](https://www.linkedin.com/events/ramadancodingnights6-callinggov7179317579486793729/theater/)
 
-[Watch a Revision of some topics](https://www.linkedin.com/events/ramadancodingnights7-callinggov7180492313549234176/theater/)
+NPX Command:
+    npx channayousif-todo-app

@@ -1,10 +1,11 @@
-# Currency Converter
+# Currency Converter (Project Completed)
 
 The TypeScript console app is used to convert currencies: the users enter a certain amount of money in one currency and set the currency they want to check the monetary value of.
 
-While developing the app, the beginners can master variables, algorithms, loops, if statements, and other TypeScript concepts.
+While developing the app,  variables, algorithms, loops, if statements, and other TypeScript concepts were practiced.
 
-Create a GitHub repository for the project and submit its URL in the project submission form. 
 
-[Watch Video Tutorial](https://www.linkedin.com/events/ramadancodingnights8-callinggov7181890523790532608/theater/)
+GitHub repository for the project: https://github.com/channayousif/learn-typescript/tree/master/NODE_PROJECTS/project04_currency_converter
 
+
+npx channayousif-curr-conv
