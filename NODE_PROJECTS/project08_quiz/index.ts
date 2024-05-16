@@ -31,7 +31,6 @@ let questions:{"id":number; "question":string; "a":string; "b":string; "c":strin
  {"id":10,"question":"What tool is commonly used to compile TypeScript code into JavaScript?",
  "a":"TSC (TypeScript Compiler)","b":"JSCompiler","c":"Babel","d":"Webpack"}
 ];
-
 let answers :{"id":string,"ans":string}[]=[
     {"id":"a", "ans":"A superset of JavaScript"},
 {"id":"b", "ans":"TypeScript code needs to be compiled to JavaScript before execution"},
@@ -51,7 +50,6 @@ while(true){
     if(i>9){
         break;
     }
-
 let ask =await inquirer.prompt({
     name:"question",
     type:"list",

@@ -9,7 +9,12 @@ async function student_menu(){
     })
     return input.opt
 }
-const res= await student_menu();
+//const res= await student_menu();
 console.log(Date());
 
  let x=[1,2,3,4];
+
+ let n={"a":1,
+    asd:4,
+    as:223 }
+    console.log(n.as)
