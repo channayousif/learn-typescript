@@ -18,3 +18,13 @@ console.log(Date());
     asd:4,
     as:223 }
     console.log(n.as)
+    let coursefeeData = [
+        { course: "Typescript", fee: 1000 },
+        { course: "HTML", fee: 1000 },
+        { course: "CSS", fee: 1000 },
+        { course: "NEXT.js", fee: 1000 },
+        { course: "Python", fee: 1000 },
+        { course: "Other", fee: 1000 },
+      ];
+      let xyz=coursefeeData.map(val=>val.course);
+      console.log(xyz)

@@ -1,6 +1,6 @@
-# OOP Introduction Explained with a TypeScript Console Application
+# OOP with a TypeScript Console Application School Managment System (Project completed on 17/5/2024)
 
-In this project you are going to follow this [video](https://www.youtube.com/watch?v=QboWn0NOUA8) which explains object oriented programming using C# and write the same code in TypeScript.
 
-Create a GitHub repository for the project and submit its URL in the project submission form. 
+
+GitHub repository for the project and submit its URL in the project submission form. 
 
