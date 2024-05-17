@@ -31,13 +31,7 @@ async function main_menu() {
       "Staff",
       "Exit",
     ]);
-    // const input =
-    // await inquirer.prompt({
-    //   name: "opt",
-    //   type: "list",
-    //   message: "\n____________________________\n| Main MENU, please select: |\n----------------------------\n",
-    //   choices: ["Students", "Teachers", "Staff", "Exit"],
-    // });
+    
     let main = mainm;
     if (main == "Students") {
       await student_menu();
@@ -198,7 +192,6 @@ async function student_menu() {
       "Enroll in a course",
       "Mark attendance",
       "Fee payment",
-      "Fee paid",
       "Exit",
     ]);
 
@@ -242,10 +235,6 @@ async function student_menu() {
         console.log("Fee payment");
         let stu = (await mgtsys.searchStubyID()) as Student;
         await stu.feepayment();
-        break;
-      }
-      case "Fee paid": {
-        console.log("Fee Paid");
         break;
       }
       case "Exit": {
@@ -331,7 +320,6 @@ class Student extends Person {
             (val) => `${val.date.toDateString()}\t|${val.attendance}\n`
           )}
           `);
-    //console.log(this.attendance);
   }
   async askCourse() {
     const input = await inquirer.prompt({
@@ -343,9 +331,7 @@ class Student extends Person {
     return input.opt;
   }
   async enroll() {
-    // let person = await mgtsys.searchStubyID();
     let course = await this.askCourse();
-    // if (person != undefined) {
     this.courses.push(course);
     this.feesData.push({
       course: course,
@@ -532,7 +518,7 @@ class ManagmentSys {
     const inp = await inquirer.prompt({
       name: "opt",
       type: "input",
-      message: "Please enter student name:",
+      message: "Please enter Name:",
     });
     return inp.opt as string;
   }
@@ -587,14 +573,7 @@ class ManagmentSys {
       )} registered with TeacherID: ${chalk.bold.yellow(tea.teacherID)}.`
     );
   }
-  //   let teach = new Teachers(nam);
-  //   this.teachers.push(teach);
-  //   console.log(
-  //     `New Teacher ${chalk.bold.yellow(
-  //       nam
-  //     )} registered with teacherID: ${chalk.bold.yellow(teach.teacherID)}.`
-  //   );
-  // }
+
   async askID() {
     try {
       const inp = await inquirer.prompt({
@@ -612,7 +591,7 @@ class ManagmentSys {
     let stu: Student | undefined;
     let ID = await this.askID();
     stu = mgtsys.students.find(
-      (student) => student.studentID.toLowerCase() == ID
+      (student) => student.studentID.toLowerCase() == ID.toLowerCase()
     );
     if (stu != undefined) {
       return stu;
@@ -624,9 +603,10 @@ class ManagmentSys {
   }
 
   async searchTchrbyID() {
-    let tch;
+    let tch:Teachers|undefined;
     let ID = await this.askID();
-    tch = mgtsys.teachers.find((teacher) => teacher.teacherID == ID);
+    tch = mgtsys.teachers.find((
+      teacher) => teacher.teacherID.toLowerCase() == ID.toLowerCase());
     if (tch != undefined) {
       return tch;
     } else {
@@ -639,7 +619,7 @@ class ManagmentSys {
     let sta: Staff | undefined;
     let ID = await this.askID();
     if (ID.charAt(0).toLowerCase() == "s") {
-      sta = mgtsys.staff.find((staf) => staf.staffID.toLowerCase() == ID);
+      sta = mgtsys.staff.find((staf) => staf.staffID.toLowerCase() == ID.toLowerCase());
       if (sta != undefined) {
         return sta;
       } else {
@@ -649,17 +629,7 @@ class ManagmentSys {
       }
     }
   }
-  //   let stf;
-  //   const inp = await this.askID();
-  //   stf = mgtsys.staff.find((staf) => staf.staffID.toLocaleLowerCase() == inp.opt1.toLocaleLowerCase());
-  //   if (stf != undefined) {
-  //     return stf;
-  //   } else {
-  //     console.log(`ID ${inp} not found.`);
-  //     console.log("Enter a valid ID");
-  //     main_menu();
-  //   }
-  // }
+  
 }
 let mgtsys = new ManagmentSys();
 main_menu();
